@@ -9,11 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    let caculator = CaculatorView()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        caculator.show()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
